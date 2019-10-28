@@ -1,0 +1,37 @@
+body {
+    width: auto;
+}
+
+nav {
+    margin-bottom: 10px;
+    padding: 1px;
+    background-color: red;
+}
+
+img {
+    width: 350px;
+    height: 350px;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+#wrapper {
+    text-align: center;
+}
+
+#picHolder {
+    background-color: green;
+    height: 350px;
+}
+
+footer {
+    background-color: red;
+}
