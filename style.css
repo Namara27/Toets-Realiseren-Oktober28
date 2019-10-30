@@ -86,7 +86,9 @@ table.zenderlist td {
 
 input[name="omschrijving"], input[name="zender"], input[name="prognaam"],
 input[name="datum"], input[name="begintijd"], input[name="eindtijd"],
-input[name="presentator"], input[name="zendernaam"] {
+input[name="presentator"], input[name="zendernaam"], input[name="numberID"],
+input[name="progNaamAdd"], input[name="progDateAdd"], input[name="progBeginTijdAdd"],
+input[name="progEindTijdAdd"], input[name="progPresentatorAdd"], input[name="progZendernaamAdd"] {
     width: 250px;
 }
 

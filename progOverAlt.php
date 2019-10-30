@@ -28,7 +28,7 @@ require_once('databaseConn.php');
         //Display the data in a table
         $test = $conn->query("SELECT prognaam, datum, begintijd, eindtijd, presentator FROM programma");
         print "<table class ='zenderoverzicht'>";
-        print "<tr><th>Programma</th><th>Datum</th><th>Tijd</th><th>Duur in minuten</th><th>Presentator</th><th></th><th></th></tr>";
+        print "<tr><th>Programma</th><th>Datum</th><th>Tijd</th><th>Duur in minuten</th><th>Presentator</th><th></th><th><a href='progToevoegen.php'>Toevoegen</a></th></tr>";
         foreach ($test as $row) {
             print "<tr>";
             print "<td>" . $row['prognaam'] . "</td>";
