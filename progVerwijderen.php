@@ -26,6 +26,7 @@ require_once('databaseConn.php');
         <input type="number" name="numberID">
         <p></p>
         <input type="submit" name="verwijder" value="Verwijderen">
+        <a href="progOverAlt.php" class="zenderToevoegen">Annuleren</a>
     </form>
     <div id="overzichtHouder">
         <?php

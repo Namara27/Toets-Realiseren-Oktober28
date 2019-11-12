@@ -41,6 +41,14 @@ try {
         $conn->query("INSERT INTO programma (idprogramma, prognaam, datum, begintijd, eindtijd, presentator, zendernaam) VALUES ('$numberID','$prognaam','$datum','$begintijd','$eindtijd','$presentator','$zendernaam')");
     }
 
+    //Database zender toevoegen
+    if (isset($_POST["toevoegenZender"])) {
+        $zendernaam = $_POST['zendernaam'];
+        $omschrijving= $_POST['omschrijving'];
+
+        $conn->query("INSERT INTO zender (zendernaam, omschrijving) VALUES ('$zendernaam','$omschrijving')");
+    }
+
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }

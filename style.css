@@ -1,3 +1,7 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
 body {
     width: auto;
 }
@@ -5,7 +9,7 @@ body {
 nav {
     margin-bottom: 10px;
     padding: 1px;
-    background-color: red;
+    /*background-color: red;*/
 }
 
 img {
@@ -30,12 +34,12 @@ li a {
 }
 
 #picHolder {
-    background-color: green;
+    /*background-color: green;*/
     height: 350px;
 }
 
 #zenderToevoegen {
-    background-color: yellow;
+    /*background-color: yellow;*/
     width: 1100px;
     margin: auto;
 }
@@ -70,7 +74,6 @@ table.zenderoverzicht td, th {
 
 table.zenderlist {
     margin: 15px;
-    /*width: 600px;*/
     display: inline-block;
     border-collapse: collapse;
     border: 1px solid black;
@@ -80,18 +83,30 @@ table.zenderlist td {
     border-top: 1px solid black;
     padding: 10px;
     width: 200px;
-    height: 50px;
-    color: red;
+    height: 60px;
+    /*color: red;*/
 }
 
 input[name="omschrijving"], input[name="zender"], input[name="prognaam"],
 input[name="datum"], input[name="begintijd"], input[name="eindtijd"],
 input[name="presentator"], input[name="zendernaam"], input[name="numberID"],
 input[name="progNaamAdd"], input[name="progDateAdd"], input[name="progBeginTijdAdd"],
-input[name="progEindTijdAdd"], input[name="progPresentatorAdd"], input[name="progZendernaamAdd"] {
+input[name="progEindTijdAdd"], input[name="progPresentatorAdd"], input[name="progZendernaamAdd"], input[name="zenderToevoegen"] {
     width: 250px;
 }
 
+.zenderToevoegen {
+    width: 115px;
+    height: 25px;
+    background: #4d4d4d;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: small;
+    text-decoration: none;
+}
+
 footer {
-    background-color: red;
+    /*background-color: red;*/
 }

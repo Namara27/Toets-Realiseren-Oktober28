@@ -28,7 +28,7 @@ require_once('databaseConn.php');
         //Display the data in a table
         $test = $conn->query("SELECT prognaam, datum, begintijd, eindtijd, presentator FROM programma");
         print "<table class ='zenderoverzicht'>";
-        print "<tr><th>Programma</th><th>Datum</th><th>Tijd</th><th>Duur in minuten</th><th>Presentator</th><th></th><th><a href='progToevoegen.php'>Toevoegen</a></th></tr>";
+        print "<tr><th>Programma</th><th>Datum</th><th>Tijd</th><th>Duur in minuten</th><th>Presentator</th><th></th><th><a href='progToevoegen.php' class='zenderToevoegen'>Toevoegen</a></th></tr>";
         foreach ($test as $row) {
             print "<tr>";
             print "<td>" . $row['prognaam'] . "</td>";
@@ -36,8 +36,8 @@ require_once('databaseConn.php');
             print "<td>" . $row['begintijd'] . " - " . $row['eindtijd'] . "</td>";
             print "<td>" . "120" . "</td>";
             print "<td>" . $row['presentator'] . "</td>";
-            print "<td>" . '<a href="progWijzigen.php">Wijzig</a>' . "</td>";
-            print "<td>" . '<a href="progVerwijderen.php">Verwijder</a>' . "</td>";
+            print "<td>" . '<a href="progWijzigen.php" class="zenderToevoegen">Wijzig</a>' . "</td>";
+            print "<td>" . '<a href="progVerwijderen.php" class="zenderToevoegen">Verwijder</a>' . "</td>";
             print "</tr>";
         }
         print "</table>";

@@ -1,7 +1,10 @@
+<?php
+require_once('databaseConn.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Radioprogramma</title>
@@ -19,11 +22,17 @@
             </ul>
         </nav>
     </header>
-    <div id="picHolder">
-        <img src="img/radiodj1.jpg" alt="radiodj1">
-        <img src="img/radiodj2.jpg" alt="radiodj2">
-        <img src="img/radiodj3.jpg" alt="radiodj3">
-    </div>
+    <form action="zender.php" method="post" enctype="multipart/form-data">
+        <div id="zenderToevoegen">
+            <p>Zender</p>
+            <input type="text" name="zendernaam">
+            <p>Omschrijving</p>
+            <input type="text" name="omschrijving">
+            <p></p>
+            <input type="submit" name="toevoegenZender" value="Verzenden">
+            <a href="zender.php">Annuleren</a>
+        </div>
+    </form>
     <footer>
         <p>&copy; Kraeken</p>
     </footer>

@@ -22,27 +22,26 @@ require_once('databaseConn.php');
             </ul>
         </nav>
     </header>
-    <div id="zenderToevoegen">
-        <p>Zender</p>
-        <input type="text" name="zender">
-        <p>Omschrijving</p>
-        <input type="text" name="omschrijving">
-        <p></p>
-        <input type="submit" name="verstuur" value="Verzenden">
-    </div>
     <div id="zenderLijst">
         <?php
         //Display the data in a table
         $test = $conn->query("SELECT zendernaam, omschrijving FROM zender");
-        print "<table class ='zenderlist'>";
-        foreach ($test as $row) {
-            print "<tr>";
-            print "<td rowspan='3' height='400px'>" . $row['zendernaam'] . '<br>' . $row['omschrijving'] . '<br>' . '<a href="progOverAlt.php">Programma overzicht</a>' . "</td>";
-            print "</tr>";
-        }
+        print "<table class ='zenderlist'>";   echo '<tr>';
+        $columnIndex = 0;
+        foreach($test as $row) {
+            if($columnIndex === 2) {
+                $columnIndex = 0;
+                echo '</tr><tr>';
+            } else {
+                $columnIndex++;
+            }
+            print "<td>" . $row['zendernaam'] . '<br>' . $row['omschrijving'] . '<br>' . '<a href="progOverAlt.php">Programma overzicht</a>' . "</td>";
+}
+        echo '</tr>';
         print "</table>";
         ?>
     </div>
+    <a href="zenderToevoegen.php" class="zenderToevoegen">Zender toevoegen</a>
     <footer>
         <p>&copy; Kraeken</p>
     </footer>
