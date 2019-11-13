@@ -2,10 +2,10 @@
 try {
     //Connect to database
     $servername = "127.0.0.1";
-    $username = "root";
-    $password = "";
+    $username = "deb7255_namara";
+    $password = "G4rgfATkWjYXE8Q";
 
-    $conn = new PDO("mysql:host=$servername;dbname=kraekenradio;port=3306", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=deb7255_namara", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     //Database wijzigen
@@ -44,7 +44,7 @@ try {
     //Database zender toevoegen
     if (isset($_POST["toevoegenZender"])) {
         $zendernaam = $_POST['zendernaam'];
-        $omschrijving= $_POST['omschrijving'];
+        $omschrijving = $_POST['omschrijving'];
 
         $conn->query("INSERT INTO zender (zendernaam, omschrijving) VALUES ('$zendernaam','$omschrijving')");
     }
