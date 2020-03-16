@@ -51,17 +51,17 @@ li a {
     display: inline-block;
 }
 
-#overzichtHouder {
+#overzichtEvenementen {
     margin-top: 20px;
 }
 
-table.zenderoverzicht {
+table.evenementenoverzicht {
     border-collapse: collapse;
     border: 1px solid black;
     display: inline-block;
 }
 
-table.zenderoverzicht td, th {
+table.evenementenoverzicht td, th {
     border: 1px solid black;
     padding: 5px 30px;
 }

@@ -2,10 +2,10 @@
 try {
     //Connect to database
     $servername = "127.0.0.1";
-    $username = "deb7255_namara";
-    $password = "G4rgfATkWjYXE8Q";
+    $username = "root";
+    $password = "";
 
-    $conn = new PDO("mysql:host=$servername;dbname=deb7255_namara", $username, $password);
+    $conn = new PDO("mysql:host=$servername;dbname=kraekenradio", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     //Database wijzigen
